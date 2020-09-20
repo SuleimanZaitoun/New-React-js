@@ -1,0 +1,27 @@
+@import '/home/test/Desktop/malikkk/src/components/Assets/Colors';
+
+.row {
+    max-width: 1024ox;
+    margin: 0 auto;
+}
+
+.main-place {
+    background-color:$very-light-gray;
+    position: relative;
+    width: 1024px;
+}
+
+.boxes-Place {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1024px;
+}
+
+@media screen and (max-width: 480px) {
+
+.boxes-Place {
+    flex-direction: column;
+}
+
+}

@@ -1,26 +1,15 @@
-
-$dark-blue: hsl(209, 23%, 22%);
-$very-dark-blue-dark-mode: hsl(207, 26%, 17%);
-$very-dark-blue-light-mode: hsl(200, 15%, 8%);
-$dark-gray: hsl(0, 0%, 52%);
-$very-light-gray:hsl(0, 0%, 96%);
-$white : hsl(0, 0%, 100%);
-
-
-* {
-    font-family: 'Nunito Sans', sans-serif;
-    box-sizing: border-box;
-}
+@import '/home/test/Desktop/malikkk/src/components/Assets/Colors';
 
 .box {
     background-color: $white;
     border-radius: 5px;
-    box-shadow: 0px 2px 9px gray;
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10);
     height: 280px;
-    margin-left: 60px;
+    margin-left: 46px;
     margin-top: 40px;
+    padding-bottom: 20px;
     position: relative;
-    width: 238px;
+    width: 200px;
 }
 
 .box__div--picture {
@@ -28,17 +17,17 @@ $white : hsl(0, 0%, 100%);
     background-size: cover;
     border-radius: 5px;
     height: 150px;
-    width: 238px;
+    width: 200px;
 }
 
 .box__country-name {
     font-size: 12px;
     margin-left: 15px;
+    margin-top: 20px;
 }
 
 .box__div--tags {
-    margin-top: 35px;
-    position: relative;
+    margin-top: 25px;
 }
 
 .box__country-info {
@@ -46,58 +35,39 @@ $white : hsl(0, 0%, 100%);
     font-size: 12px;
     font-size: 8px;
     margin-left: 15px;
-    margin-top: -15px;
 }
 
 .box__country-info--span-in-gray{
     color:gray;
 }
 
-@media screen and (max-width: 425px) {
-.box:first-of-type {
-    height: 320px;
-    margin-left: 60px;
-    margin-top: 40px;
-    position: relative;
-    width: 70%;
-    margin-top: 100px;
-}
+@media screen and (max-width: 480px) {
+    .box:first-of-type {
+        height: 320px;
+        margin-left: 60px;
+        margin-top: 100px;
+        margin-top: 40px;
+        position: relative;
+        width: 330px;
+    }
 
-.box {
-    height: 320px;
-    margin-left: 60px;
-    margin-top: 40px;
-    position: relative;
-    width: 70%;
-}
+    .box {
+        height: 320px;
+        margin-left: 60px;
+        width: 330px;
+    }
 
-.box__country-name  {
-    font-size: 15px;
-    margin-left: 15px;
-}
+    .box__country-name  {
+        font-size: 15px;
+    }
 
-.box__div--picture {
-    background-image: url("https://restcountries.eu/data/tur.svg");
-    background-size: cover;
-    height: 190px;
-    width: 100%;
-}
+    .box__div--picture {
+        height: 190px;
+        width: 330px;
+    }
 
-.box__div--tags {
-    margin-top: 35px;
-    position: relative;
-}
-
-.box__country-info {
-    color: rgb(44, 44, 44);
-    font-size: 12px;
-    font-size: 8px;
-    margin-left: 15px;
-    margin-top: -15px;
-}
-
-.box__box__country-info-in-gray {
-    color:gray;
-}
+    .box__country-info {
+        margin-top: 5px;
+    }
 
 }
