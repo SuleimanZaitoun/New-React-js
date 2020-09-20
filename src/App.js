@@ -1,7 +1,7 @@
 import React from 'react';
 import Normalize from 'react-normalize';
 
-import Header from './components/Header/Header'
+import Header from './components/Header/Header.js'
 import CardsHolder from './components/CardsHolder/CardsHolder.js'
 
 import './app.scss'
