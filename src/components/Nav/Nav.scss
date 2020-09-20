@@ -1,98 +1,66 @@
+@import '../../Assets/Colors.scss';
 
-$dark-blue: hsl(209, 23%, 22%);
-$very-dark-blue-dark-mode: hsl(207, 26%, 17%);
-$very-dark-blue-light-mode: hsl(200, 15%, 8%);
-$dark-gray: hsl(0, 0%, 52%);
-$very-light-gray:hsl(0, 0%, 96%);
-$white : hsl(0, 0%, 100%);
-
-
-* {
-    font-family: 'Nunito Sans', sans-serif;
-    box-sizing: border-box;
+.mainContainer {
+    background-color: white;
+    width: 100%;
 }
 
 .nav {
     background-color: $white;
-    box-shadow: 0px 3px 10px black;
     display: flex;
-    flex-direction: row;
-    height: 60px;
     justify-content: space-between;
-    width: 100%;
-}
-
-.nav__Button-div {
-    margin-right: 22px;
+    padding-bottom: 15px;
     position: relative;
-    padding-left: 15px;
+    z-index: 1;
 }
-
-
 
 .icon-night {
     color: $very-dark-blue-light-mode;
-    left: 15px;
-    position: absolute;
-    top: 22px;
+    margin-top: 15px;
     transform: rotate(-40deg);
+}
+
+.nav__Button-div {
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 .nav__header {
     color:$very-dark-blue-light-mode;
-    margin-left: 60px;
-    margin-top: 20px;
 }
 
 .nav__button {
     background-color: $white;
     border-radius: 5px;
-    border: 1px white;
+    border: none;
     color: black;
     height: 30px;
-    margin-right: 40px;
-    margin-top: 15px;
+    padding-top: 15px;
     width:100px;
 }
 
-@media screen and (max-width: 425px) {
-.nav__Button-div {
-    position: relative;
-    margin-right: 0px;
-    margin-top: 5px;
-    padding-left: 20px;
-}
+@media screen and (max-width: 480px) {
+    .nav {
+        padding-bottom: 25px;
+    }
 
-.icon-search {
-    position: absolute;  top: 20px;
-    left: 30px;
-    top: 30px;
-    color: gray;
-}
+    .nav__header {
+        padding-left: 20px;
+    }
 
-.icon-night {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: rgb(68, 68, 68);
-    transform:rotate(-40deg);
-}
+    .nav__Button-div {
+        margin-top: 20px;
+    }
 
-.nav__header {
-    color: black;
-    margin-left: 20px;
-    margin-top: 20px;
-}
+    .nav__button {
+        padding-top: 13px;
+    }
 
-.nav__button {
-    background-color: white;
-    border-radius: 5px;
-    border: 1px white;
-    color: black;
-    height: 30px;
-    margin-right: 5px;
-    margin-top: 15px;
-    width:100px;
-}
+    .icon-search {
+        left: 30px;
+    }
 
+    .nav__header {
+        padding-top: 13px;
+    }
 }

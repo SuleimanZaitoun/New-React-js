@@ -1,0 +1,23 @@
+@import '../../Assets/Colors.scss';
+
+.row {
+    max-width: 1024ox;
+    margin: 0 auto;
+}
+
+.main-place {
+    background-color:$very-light-gray;
+    position: relative;
+}
+
+.boxes-Place {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+    .boxes-Place {
+        flex-direction: column;
+    }
+}

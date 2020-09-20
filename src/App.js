@@ -1,15 +1,19 @@
 import React from 'react';
+import Normalize from 'react-normalize';
 
-import Header from './components/Header/Header'
-import Nav from './components/Nav/Nav'
+import Header from './components/Header/Header.js'
+import CardsHolder from './components/CardsHolder/CardsHolder.js'
 
+import './app.scss'
 
 function App() {
   return (
-    <div>
-      <Nav/>
-      <Header/>
-    </div> );
+    <>
+      <Normalize />
+      <Header />
+      <CardsHolder />
+    </>
+  );
 }
 
 export default App;
