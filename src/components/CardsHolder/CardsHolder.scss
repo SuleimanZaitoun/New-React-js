@@ -1,4 +1,4 @@
-@import '../Assets/Colors';
+@import '../../Assets/Colors.scss';
 
 .row {
     max-width: 1024ox;
@@ -8,18 +8,16 @@
 .main-place {
     background-color:$very-light-gray;
     position: relative;
-    width: 1024px;
 }
 
 .boxes-Place {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1024px;
 }
 
 @media screen and (max-width: 480px) {
-.boxes-Place {
-    flex-direction: column;
-}
+    .boxes-Place {
+        flex-direction: column;
+    }
 }

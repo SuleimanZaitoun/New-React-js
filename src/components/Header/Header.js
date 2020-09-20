@@ -7,21 +7,23 @@ import Nav from '../Nav/Nav.js'
 
 function Header() {
     return (
-        <header className="container main-place ">
+        <div>
             <Nav />
-            <div className="main-place__search-div">
-                <FaSistrix className="icon-search"/>
-                <input className="main-place__input" placeholder="Search for country"></input>
-            </div>
-            <select className="main-place__select">
-                <option value='' disabled selected hidden>Flitter by Region</option>
-                <option>Africa</option>
-                <option>America</option>
-                <option>Asia</option>
-                <option>Europe</option>
-                <option>Oceania</option>
-            </select>
-        </header>
+            <header className="container main-place ">
+                <div className="main-place__search-div">
+                    <FaSistrix className="icon-search"/>
+                    <input className="main-place__input" placeholder="Search for country"></input>
+                </div>
+                    <select className="main-place__select">
+                        <option value='' disabled selected hidden>Flitter by Region</option>
+                        <option>Africa</option>
+                        <option>America</option>
+                        <option>Asia</option>
+                        <option>Europe</option>
+                        <option>Oceania</option>
+                </select>
+            </header>
+        </div>
     );
 }
 

@@ -1,29 +1,33 @@
-@import '../Assets/Colors';
+@import '../../Assets/Colors.scss';
 
 .main-place {
+  align-items: center;
   background-color: $very-light-gray;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 0;
 }
 
 .main-place__search-div {
-  position: relative;
-}
-
-.icon-search {
-  color: gray;
-  left: 70px;
-  position: absolute;
-  top: 30px;
-}
-
-.main-place__input {
   background-color: $white;
   border-radius: 5px;
   border: none;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.10);
+  margin: 48px 0;
+  position: relative;
+
+}
+
+.icon-search {
+  color: gray;
+  margin-left: 18px;
+}
+
+.main-place__input {
+  border-radius: 5px;
+  border: none;
   height: 40px;
-  margin: 20px 0 30px 60px;
-  padding-left: 40px;
+  padding-left: 20px;
   width: 350px;
 }
 
@@ -34,22 +38,33 @@
   box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.10);
   color: rgb(102, 102, 102);
   height: 40px;
-  left: 820px;
+  margin-right: 20px;
   padding-left: 10px;
-  padding-right: 10px;
-  position: absolute;
-  top: 80px;
-  width: 170px;
+  width: 202px;
 }
 
 @media screen and (max-width: 480px) {
+  .main-place {
+    flex-direction: column;
+    padding: 36px 0;
+  }
+
   .main-place__input  {
-    margin-bottom: 60px;
     margin-left: 15px;
   }
 
+  .icon-search {
+    color: gray;
+    margin-left: 13px;
+    margin-left: 30px;
+    margin-top: -31px;
+    position: flex;
+  }
+
   .main-place__select {
-    left:15px ;
-    top: 145px;
+    align-self: start;
+    display: flex;
+    margin-left: 25px;;
+    margin-top: -40px;
   }
 }

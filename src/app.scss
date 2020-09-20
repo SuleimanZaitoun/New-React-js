@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+@import './Assets/Colors.scss';
+
+body {
+    background-color: $very-light-gray;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 .container {
     max-width: 1024px;
     margin: 0 auto;
