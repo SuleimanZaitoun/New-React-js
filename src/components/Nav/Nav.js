@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaRegMoon} from 'react-icons/fa'
+import { FaRegMoon } from 'react-icons/fa';
 
 import './Nav.scss';
 

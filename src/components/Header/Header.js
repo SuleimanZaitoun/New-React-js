@@ -1,13 +1,14 @@
 import React from 'react';
-import {FaSistrix} from 'react-icons/fa'
+import { FaSistrix } from 'react-icons/fa';
 
 import './Header.scss';
-import Nav from '/home/test/Desktop/malikkk/src/components/Nav/Nav.js'
+
+import Nav from '../Nav/Nav.js'
 
 function Header() {
     return (
         <header className="container main-place ">
-            <Nav/>
+            <Nav />
             <div className="main-place__search-div">
                 <FaSistrix className="icon-search"/>
                 <input className="main-place__input" placeholder="Search for country"></input>
