@@ -16,6 +16,10 @@
     transform: rotate(-40deg);
 }
 
+.nav__Button-div {
+    margin-top: 5px;
+}
+
 .nav__header {
     color:$very-dark-blue-light-mode;
 }
@@ -39,6 +43,7 @@
     .nav__header {
         padding-left: 20px;
     }
+
     .nav__Button-div {
         margin-top: 10px;
     }
