@@ -1,5 +1,13 @@
 @import '../../Assets/Colors.scss';
 
+.main-holder {
+    width: 100%;
+}
+
+.main-holderDarkMode {
+    width: 100%;
+    background-color: $very-dark-blue-light-mode;
+}
 .row {
     max-width: 1024ox;
     margin: 0 auto;
@@ -9,6 +17,12 @@
     background-color:$very-light-gray;
     position: relative;
 }
+
+.main-placeDarkMode {
+    background-color:$very-dark-blue-light-mode;
+    position: relative;
+}
+
 
 .boxes-Place {
     display: flex;

@@ -2,18 +2,20 @@ import React from 'react';
 
 import './Card.scss';
 
-function Card() {
+function Card(props) {
   return (
-    <div className="box ">
-      <div className="box__div--picture">
+    <div className={props.darkMode? 'boxDarkMode' : 'box'}>
+      <div className="box__div--picture"
+      style={{backgroundImage: `url(${props.flag})`
+      }}>
       </div>
-      <h4 className="box__country-name">
-        Colombia
+      <h4 className={props.darkMode? 'box__country-nameDarkMode' : 'box__country-name'}>
+        {props.name}
       </h4>
       <div className="box__div--tags">
-        <h6 className="box__country-info">Population : <span className="box__country-info--span-in-gray">48759958</span></h6>
-        <h6 className="box__country-info">Region : <span className="box__country-info--span-in-gray">America</span></h6>
-        <h6 className="box__country-info">Capital : <span className="box__country-info--span-in-gray">Bogotá</span></h6>
+        <h6 className={props.darkMode? 'box__country-infoDarkMode' : 'box__country-info'}>Population : <span className="box__country-info--span-in-gray"> {new Intl.NumberFormat().format(props.population)}</span></h6>
+        <h6 className={props.darkMode? 'box__country-infoDarkMode' : 'box__country-info'}>Region : <span className="box__country-info--span-in-gray">{props.Region}</span></h6>
+        <h6 className={props.darkMode? 'box__country-infoDarkMode' : 'box__country-info'}>Capital : <span className="box__country-info--span-in-gray">{props.Capital}</span></h6>
       </div>
     </div>
   );

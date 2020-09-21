@@ -12,8 +12,18 @@
     width: 230px;
 }
 
+.boxDarkMode {
+    background-color:  hsl(207, 26%, 17%);
+    border-radius: 5px;
+    height: 280px;
+    margin-bottom: 50px;
+    margin-right: 26px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 230px;
+}
+
 .box__div--picture {
-    background-image: url("https://restcountries.eu/data/tur.svg");
     background-size: cover;
     border-radius: 5px;
     height: 150px;
@@ -21,6 +31,13 @@
 }
 
 .box__country-name {
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.box__country-nameDarkMode {
+    color: white;
     font-size: 20px;
     margin-left: 15px;
     margin-top: 20px;
@@ -36,9 +53,20 @@
     margin-left: 15px;
 }
 
+.box__country-infoDarkMode {
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
+}
+
 .box__country-info:not(:first-child) {
     margin-top: -15px;
 }
+
+.box__country-infoDarkMode:not(:first-child) {
+    margin-top: -15px;
+}
+
 
 .box__country-info--span-in-gray{
     color:gray;
@@ -54,7 +82,22 @@
         width: 330px;
     }
 
+    .boxDarkMode:first-of-type {
+        height: 320px;
+        margin-left: 40px;
+        margin-top: 100px;
+        margin-top: 40px;
+        position: relative;
+        width: 330px;
+    }
+
     .box {
+        height: 320px;
+        margin-left: 40px;
+        width: 330px;
+    }
+
+    .boxDarkMode {
         height: 320px;
         margin-left: 40px;
         width: 330px;
@@ -64,12 +107,20 @@
         font-size: 15px;
     }
 
+    .box__country-nameDarkMode  {
+        font-size: 15px;
+    }
+
     .box__div--picture {
         height: 190px;
         width: 330px;
     }
 
     .box__country-info {
+        margin-top: 5px;
+    }
+
+    .box__country-infoDarkMode {
         margin-top: 5px;
     }
 }
