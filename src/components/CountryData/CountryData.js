@@ -15,7 +15,7 @@ export default function CountryData({match}) {
         return data.borders;
     });
 
-        return (
+    return (
         <div>
             <h1><Link to={'/'}>Back To Main Screen</Link></h1>
             <ul>
