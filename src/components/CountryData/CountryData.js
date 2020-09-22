@@ -9,8 +9,7 @@ export default function CountryData({match}) {
     }]);
     const [allCountries, setAllCountries]= useState({});
     const [value]= useContext(CountryProvider);
-
-
+    console.log(value)
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${match.params.id}`)
             .then(res => res.json())
