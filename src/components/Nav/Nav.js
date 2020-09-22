@@ -4,9 +4,10 @@ import { FaRegMoon } from 'react-icons/fa';
 import './Nav.scss';
 
 function Nav(props) {
-    const { darkMode,
-        setDarkMode
-    }= props;
+    const {
+        darkMode,
+        setDarkMode,
+    } = props;
 
     return (
         <div className={darkMode? 'mainContainer-dark-mode': 'mainContainer'}>
