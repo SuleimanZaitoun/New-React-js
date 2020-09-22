@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-.main-headerDarkMode {
+.main-header-dark-mode {
   background-color: $very-dark-blue-light-mode;
   width: 100%;
 }
@@ -17,14 +17,13 @@
   padding: 48px 0;
 }
 
-.main-placeDarkMode {
+.main-place-dark-mode {
   align-items: center;
   background-color: $very-dark-blue-light-mode;
   display: flex;
   justify-content: space-between;
   padding: 48px 0;
 }
-
 
 .main-place__search-div {
   background-color: $white;
@@ -35,7 +34,7 @@
   position: relative;
 }
 
-.main-place__search-divDarkMode {
+.main-place__search-div-dark-mode {
   background-color: hsl(207, 26%, 17%);
   border-radius: 5px;
   border: none;
@@ -54,21 +53,23 @@
   border-radius: 5px;
   border: none;
   height: 40px;
+  outline: none;
   padding-left: 20px;
   width: 350px;
 }
 
-.main-place__inputDarkMode {
+.main-place__input-dark-mode {
   background-color: hsl(207, 26%, 17%);
   border-radius: 5px;
   border: none;
   color: white;
   height: 40px;
+  outline: none;
   padding-left: 20px;
   width: 350px;
 }
 
-.main-place__inputDarkMode::placeholder {
+.main-place__input-dark-mode::placeholder {
   color: white;
 }
 
@@ -80,11 +81,12 @@
   color: rgb(102, 102, 102);
   height: 40px;
   margin-right: 20px;
+  outline: none;
   padding-left: 10px;
   width: 202px;
 }
 
-.main-place__selectDarkMode {
+.main-place__select-dark-mode {
   background-color: hsl(207, 26%, 17%);
   border-radius: 5px;
   border: none;
@@ -92,6 +94,7 @@
   color: white;
   height: 40px;
   margin-right: 20px;
+  outline: none;
   padding-left: 10px;
   width: 202px;
 }
@@ -102,7 +105,7 @@
     padding: 36px 0;
   }
 
-  .main-placeDarkMode {
+  .main-place-dark-mode {
     flex-direction: column;
     padding: 36px 0;
   }
@@ -111,7 +114,7 @@
     margin-left: -30px;
   }
 
-  .main-place__search-divDarkMode {
+  .main-place__search-div-dark-mode {
     margin-left: -30px;
   }
 
@@ -119,7 +122,7 @@
     margin-left: 0px;
   }
 
-  .main-place__inputDarkMode  {
+  .main-place__input-dark-mode  {
     margin-left: 0px;
   }
 
@@ -137,7 +140,7 @@
     margin-top: -40px;
   }
 
-  .main-place__selectDarkMode {
+  .main-place__select-dark-mode {
     align-self: start;
     display: flex;
     margin-left: 25px;;

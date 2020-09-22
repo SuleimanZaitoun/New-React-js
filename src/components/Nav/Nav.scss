@@ -5,7 +5,7 @@
     width: 100%;
 }
 
-.mainContainerDarkMode {
+.mainContainer-dark-mode {
     background-color:hsl(207, 26%, 17%);
     width: 100%;
 }
@@ -19,7 +19,7 @@
     z-index: 1;
 }
 
-.navDarkMode {
+.nav-dark-mode {
     background-color:hsl(207, 26%, 17%);
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
     transform: rotate(-40deg);
 }
 
-.icon-nightDarkMode {
+.icon-night-dark-mode {
     color: white;
     margin-top: 15px;
     transform: rotate(-40deg);
@@ -49,7 +49,7 @@
     color:$very-dark-blue-light-mode;
 }
 
-.nav__headerDarkMode {
+.nav__header-dark-mode {
     color:$white;
 }
 
@@ -59,16 +59,18 @@
     border: none;
     color: black;
     height: 30px;
+    outline: none;
     padding-top: 15px;
     width:100px;
 }
 
-.nav__buttonDarkMode {
+.nav__button-dark-mode {
     background-color: hsl(207, 26%, 17%);
     border-radius: 5px;
     border: none;
     color: white;
     height: 30px;
+    outline: none;
     padding-top: 15px;
     width:100px;
 }
@@ -78,7 +80,7 @@
         padding-bottom: 25px;
     }
 
-    .navDarkMode {
+    .nav-dark-mode {
         padding-bottom: 25px;
     }
 
@@ -86,7 +88,7 @@
         padding-left: 20px;
     }
 
-    .nav__headerDarkMode {
+    .nav__header-dark-mode {
         padding-left: 20px;
     }
 
@@ -98,7 +100,7 @@
         padding-top: 13px;
     }
 
-    .nav__buttonDarkMode {
+    .nav__button-dark-mode {
         padding-top: 13px;
     }
 
@@ -110,7 +112,7 @@
         padding-top: 13px;
     }
 
-    .nav__headerDarkMode {
+    .nav__header-dark-mode {
         padding-top: 13px;
     }
 }

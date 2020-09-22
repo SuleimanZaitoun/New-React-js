@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import CountryData from './components/CountryData/CountryData.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route component={CountryData} path ='/code/:id'/>
+        <Route component={App} path ='/'/>
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
