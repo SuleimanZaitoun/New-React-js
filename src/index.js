@@ -9,14 +9,14 @@ import CountryData from './components/CountryData/CountryData.js';
 
 ReactDOM.render(
   <React.StrictMode>
-    <CountryProvider.Provider>
+    <CountryProvider>
       <BrowserRouter>
         <Switch>
           <Route component={CountryData} path='/code/:id'/>
           <Route component={App} path='/'/>
         </Switch>
       </BrowserRouter>
-    </CountryProvider.Provider>
+    </CountryProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
