@@ -18,6 +18,7 @@ export default function CountryData({match}) {
     );
 
     const borderList = countryData.map(data => {
+
     return data.borders;
     });
 
@@ -28,13 +29,14 @@ export default function CountryData({match}) {
 
     const names = allCountries.filter((data) => {
         if(borderList[0].includes(data.cioc, 0)) {
+
             return data;
         }
     });
 
     return (
         <div>
-            <h1><Link to={'/'}>Back To Main Screen</Link></h1>
+            <h1><Link to={"/"}>Back To Main Screen</Link></h1>
             <ul>
                 {(names).map(data => (
                     <li>

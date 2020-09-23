@@ -9,6 +9,7 @@ export const CountryProvider = props => {
             .then(res => res.json())
             .then(data => setData(data));
         }, []);
+
         return (
             <CountryContext.Provider value={[data]}>
             {props.children}

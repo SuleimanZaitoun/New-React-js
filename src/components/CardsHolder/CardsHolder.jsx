@@ -1,9 +1,9 @@
 import React, {useState , useEffect, useContext} from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import './CardsHolder.scss';
 
-import {CountryContext} from '../Context/CountryContext.jsx';
+import { CountryContext } from '../Context/CountryContext.jsx';
 
 import Box from '../Card/Card.jsx';
 
@@ -16,6 +16,7 @@ function CardsHolder(props) {
 
     const FliterdData = data.filter(name => {
             if (countryName) {
+
                 return name.name.toLowerCase().includes(countryName.toLowerCase());
             }
             return name
@@ -23,8 +24,10 @@ function CardsHolder(props) {
 
     const DoubleFliterdData = FliterdData.filter(name => {
         if (selectData) {
+
             return name.region.toLowerCase().includes(selectData.toLowerCase());
         }
+
         return name;
     });
 
@@ -37,8 +40,8 @@ function CardsHolder(props) {
 
     return (
         <CountryContext.Provider value={data}>
-                <div className={props.darkMode? 'main-holder-dark-mode': 'main-holder'}>
-                <div className={props.darkMode? 'main-place-dark-mode container': 'main-place container'}>
+                <div className={props.darkMode ? "main-holder-dark-mode" : "main-holder"}>
+                <div className={props.darkMode ? "main-place-dark-mode container" : "main-place container"}>
                     <div className="boxes-Place">
                         {DoubleFliterdData.map( data => (
                             <Link to={`/code/${data.cioc}`}>

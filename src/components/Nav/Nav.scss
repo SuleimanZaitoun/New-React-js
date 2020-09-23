@@ -6,7 +6,7 @@
 }
 
 .mainContainer-dark-mode {
-    background-color:hsl(207, 26%, 17%);
+    background-color: hsl(207, 26%, 17%);
     width: 100%;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .nav-dark-mode {
-    background-color:hsl(207, 26%, 17%);
+    background-color: hsl(207, 26%, 17%);
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
@@ -46,11 +46,11 @@
 }
 
 .nav__header {
-    color:$very-dark-blue-light-mode;
+    color: $very-dark-blue-light-mode;
 }
 
 .nav__header-dark-mode {
-    color:$white;
+    color: $white;
 }
 
 .nav__button {
@@ -61,7 +61,7 @@
     height: 30px;
     outline: none;
     padding-top: 15px;
-    width:100px;
+    width: 100px;
 }
 
 .nav__button-dark-mode {
@@ -72,7 +72,7 @@
     height: 30px;
     outline: none;
     padding-top: 15px;
-    width:100px;
+    width: 100px;
 }
 
 @media screen and (max-width: 480px) {

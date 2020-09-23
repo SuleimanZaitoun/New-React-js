@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import App from './App.jsx';
 import {CountryProvider} from './components/Context/CountryContext.jsx';
@@ -12,8 +12,8 @@ ReactDOM.render(
     <CountryProvider>
       <BrowserRouter>
         <Switch>
-          <Route component={CountryData} path='/code/:id'/>
-          <Route component={App} path='/'/>
+          <Route component={CountryData} path="/code/:id" />
+          <Route component={App} path='/' />
         </Switch>
       </BrowserRouter>
     </CountryProvider>
