@@ -4,14 +4,14 @@ import { FaSistrix } from 'react-icons/fa';
 
 import './Header.scss';
 
-import Nav from '../Nav/Nav.js'
+import Nav from '../Nav/Nav.jsx';
 
 function Header(props) {
     const {
         darkMode,
-    }= props;
-    const [countryName, setCountrtName]= useState('');
-    const countryData= useRef();
+    } = props;
+    const [countryName, setCountrtName] = useState('');
+    const countryData = useRef();
 
     function checkChange() {
         setCountrtName(countryData.current.value);
@@ -34,13 +34,31 @@ function Header(props) {
                         placeholder="Search for country..">
                     </input>
                 </div>
-                    <select onChange={props.setSelect} className={darkMode? 'main-place__select-dark-mode': 'main-place__select'}>
-                        <option value='' disabled selected hidden>Flitter by Region</option>
-                        <option>Africa</option>
-                        <option>America</option>
-                        <option>Asia</option>
-                        <option>Europe</option>
-                        <option>Oceania</option>
+                    <select
+                        onChange={props.setSelect}
+                        className={darkMode? 'main-place__select-dark-mode': 'main-place__select'}
+                    >
+                        <option
+                            value=''
+                            disabled selected hidden
+                        >
+                            Flitter by Region
+                        </option>
+                        <option>
+                            Africa
+                        </option>
+                        <option>
+                            America
+                        </option>
+                        <option>
+                            Asia
+                        </option>
+                        <option>
+                            Europe
+                        </option>
+                        <option>
+                            Oceania
+                        </option>
                 </select>
             </header>
         </div>

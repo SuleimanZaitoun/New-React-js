@@ -1,9 +1,9 @@
-import React,{useState ,useEffect ,createContext} from 'react';
+import React ,{useState ,useEffect ,createContext} from 'react';
 
-export const CountryContext= createContext();
+export const CountryContext = createContext();
 
-export const CountryProvider= props => {
-    const [data, setData]= useState([]);
+export const CountryProvider = props => {
+    const [data, setData] = useState([]);
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/all`)
             .then(res => res.json())

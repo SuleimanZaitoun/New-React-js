@@ -3,26 +3,25 @@ import {Link} from "react-router-dom";
 
 import './CardsHolder.scss';
 
-import {CountryContext} from '../Context/CountryContext';
+import {CountryContext} from '../Context/CountryContext.jsx';
 
-import Box from '../Card/Card.js';
+import Box from '../Card/Card.jsx';
 
 function CardsHolder(props) {
-    const [data, setData]= useState([]);
+    const [data, setData] = useState([]);
     const {
         countryName,
         selectData,
-    }= props;
+    } = props;
 
-    const FliterdData= data.filter(name => {
+    const FliterdData = data.filter(name => {
             if (countryName) {
                 return name.name.toLowerCase().includes(countryName.toLowerCase());
             }
             return name
-        }
-    );
+        });
 
-    const DoubleFliterdData= FliterdData.filter(name => {
+    const DoubleFliterdData = FliterdData.filter(name => {
         if (selectData) {
             return name.region.toLowerCase().includes(selectData.toLowerCase());
         }
@@ -33,7 +32,8 @@ function CardsHolder(props) {
         fetch(`https://restcountries.eu/rest/v2/all`)
             .then(res => res.json())
             .then(data => setData(data));
-        }, [countryName]);
+        }, [countryName]
+    );
 
     return (
         <CountryContext.Provider value={data}>
@@ -43,12 +43,12 @@ function CardsHolder(props) {
                         {DoubleFliterdData.map( data => (
                             <Link to={`/code/${data.cioc}`}>
                                 <Box
-                                    key= {data.index}
+                                    key={data.index}
                                     name={data.name}
                                     population={data.population}
-                                    Region= {data.region}
-                                    Capital= {data.capital}
-                                    flag= {data.flag}
+                                    Region={data.region}
+                                    Capital={data.capital}
+                                    flag={data.flag}
                                     darkMode={props.darkMode}
                                     cioc={data.cioc}
                             />

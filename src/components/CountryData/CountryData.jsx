@@ -1,28 +1,30 @@
 import React, {useEffect ,useState ,useContext} from 'react';
 import {Link} from "react-router-dom";
 
-import {CountryContext} from '../Context/CountryContext';
+import {CountryContext} from '../Context/CountryContext.jsx';
 
 export default function CountryData({match}) {
-    const [countryData, setCountryData]= useState([{
-        borders:[]
+    const [countryData, setCountryData] = useState([{
+        borders : []
     }]);
-    const [allCountries, setAllCountries]= useState([]);
-    const [value]= useContext(CountryContext);
+    const [allCountries, setAllCountries] = useState([]);
+    const [value] = useContext(CountryContext);
 
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${match.params.id}`)
             .then(res => res.json())
             .then(data => setCountryData(data));
-        }, [match.params.id , value]);
+        }, [match.params.id ,value]
+    );
 
-        const borderList= countryData.map(data => {
-        return data.borders;
+    const borderList = countryData.map(data => {
+    return data.borders;
     });
 
     useEffect(() => {
         setAllCountries(value);
-    }, [value]);
+    }, [value]
+    );
 
     const names = allCountries.filter((data) => {
         if(borderList[0].includes(data.cioc, 0)) {

@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import App from './App';
-import {CountryProvider} from './components/Context/CountryContext';
+import App from './App.jsx';
+import {CountryProvider} from './components/Context/CountryContext.jsx';
 import * as serviceWorker from './serviceWorker';
-import CountryData from './components/CountryData/CountryData.js';
+import CountryData from './components/CountryData/CountryData.jsx';
 
 ReactDOM.render(
   <React.StrictMode>
