@@ -17,7 +17,7 @@ function Nav(props) {
                 <div className="nav__Button-div">
                     <FaRegMoon className={darkMode? 'icon-night-dark-mode': 'icon-night'}/>
                     <button
-                        onClick={setDarkMode} 
+                        onClick={setDarkMode}
                         className={darkMode? 'nav__button-dark-mode': 'nav__button'}
                     >
                         Dark Mode
