@@ -25,7 +25,7 @@ function Card(props) {
       <div
         className="box__div--tags">
         <h6 className={darkMode ? "box__country-info-dark-mode" : "box__country-info"}>
-          Population  :
+          Population :
           <span className="box__country-info--span-in-gray">
             {new Intl.NumberFormat().format(population)}
           </span>

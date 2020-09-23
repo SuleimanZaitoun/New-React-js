@@ -19,6 +19,7 @@ function CardsHolder(props) {
 
                 return name.name.toLowerCase().includes(countryName.toLowerCase());
             }
+
             return name
         });
 

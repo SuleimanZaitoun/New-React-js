@@ -1,9 +1,9 @@
 import React, {useEffect ,useState ,useContext} from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-import {CountryContext} from '../Context/CountryContext.jsx';
+import { CountryContext } from '../Context/CountryContext.jsx';
 
-export default function CountryData({match}) {
+export default function CountryData({ match }) {
     const [countryData, setCountryData] = useState([{
         borders : []
     }]);
